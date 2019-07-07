@@ -1,0 +1,132 @@
+  cd  - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly MintySensorMonitor, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed: 
+	hash=None, flags=None
+Assembly MintyServiceHWiNFO, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
+Class mintymods.MsmJniWrapper: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    processRequest(String): PrivateScope, Public, Static, HideBySig
+Class mintymods.MsmLogging: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    System.String LEVEL : Public, Static
+  Methods:
+    configureLogging(): PrivateScope, Public, Static, HideBySig
+    configureLogging(Boolean): PrivateScope, Public, Static, HideBySig
+    setLoggingLevel(String): PrivateScope, Public, Static, HideBySig
+Class mintymods.MsmServiceExample: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(mintymods.MsmMonitorRequest): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    mintymods.MsmServiceInterface
+  Fields:
+    System.String REQUEST_MAPPING : Public, Static
+    System.String RESPONSE_MAPPING : Public, Static
+  Methods:
+    getRequestMapping(): PrivateScope, Public, HideBySig
+    getResponseMapping(): PrivateScope, Public, HideBySig
+    poll(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Interface mintymods.MsmServiceInterface: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    poll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    dispose(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class mintymods.MsmServiceController: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    getMonitorForRequest(MsmMonitorRequest): PrivateScope, Public, HideBySig
+Class mintymods.MsmSensorLabel: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String value : Public
+    System.String description : Public
+  Methods:
+    setValue(String): PrivateScope, Public, HideBySig
+    setDescription(String): PrivateScope, Public, HideBySig
+    getSensorLabel(): PrivateScope, Public, HideBySig
+    getValue(): PrivateScope, Public, HideBySig
+    getDescription(): PrivateScope, Public, HideBySig
+Class mintymods.MsmMonitorRequestParameters: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String type : Public
+    System.String source : Public
+    Boolean debug : Public
+    Boolean help : Public
+Class mintymods.MsmExceptionHint: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String message : Public
+    System.String input : Public
+    System.String output : Public
+    System.String result : Public
+Class mintymods.MSM: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Main(String[]): PrivateScope, Public, Static, HideBySig
+Class mintymods.MsmMonitorRequest: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :mintymods.MsmMonitorRequestParameters
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Struct mintymods.MsmSensorType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    mintymods.MsmSensorType NONE = 0 : Public, Static, Literal, HasDefault
+    mintymods.MsmSensorType TEMP = 1 : Public, Static, Literal, HasDefault
+    mintymods.MsmSensorType VOLT = 2 : Public, Static, Literal, HasDefault
+    mintymods.MsmSensorType FAN = 3 : Public, Static, Literal, HasDefault
+    mintymods.MsmSensorType CURRENT = 4 : Public, Static, Literal, HasDefault
+    mintymods.MsmSensorType POWER = 5 : Public, Static, Literal, HasDefault
+    mintymods.MsmSensorType CLOCK = 6 : Public, Static, Literal, HasDefault
+    mintymods.MsmSensorType USAGE = 7 : Public, Static, Literal, HasDefault
+    mintymods.MsmSensorType OTHER = 8 : Public, Static, Literal, HasDefault
+Class mintymods.MsmSensor: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    mintymods.MsmSensorLabel label : Public
+    UInt32 id : Public
+    UInt32 instance : Public
+Class mintymods.MsmMonitorResponse: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Collections.Generic.List`1[mintymods.MsmSensor] sensors : Public
+    System.Collections.Generic.List`1[mintymods.MsmSensorReading] readings : Public
+    mintymods.MsmException exception : Public
+    System.Collections.Generic.List`1[System.String] labels : Public
+    System.String type : Public
+    System.String source : Public
+    System.String version : Public
+    Boolean debug : Public
+    Int64 time_taken_ms : Public
+Class mintymods.MsmException: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Exception
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    mintymods.MsmExceptionHint hint : Public
+    System.Exception exception : Public
+    System.String message : Public
+Class mintymods.MintySenorMonitor: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(mintymods.MsmMonitorRequest): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    getSensorInfoAsJSON(): PrivateScope, Public, HideBySig
+Class mintymods.MsmSensorReading: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(mintymods.MsmSensorType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    mintymods.MsmSensorType type : Public
+    mintymods.MsmSensorLabel label : Public
+    UInt32 id : Public
+    UInt32 sensor_index : Public
+    System.String unit : Public
+    Double value : Public
+    Double min : Public
+    Double max : Public
+    Double avg : Public

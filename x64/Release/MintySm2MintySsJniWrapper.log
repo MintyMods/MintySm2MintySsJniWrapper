@@ -1,0 +1,8 @@
+﻿E:\Development\Microsoft Visual Studio\2019\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2106,5): warning MSB3270: There was a mismatch between the processor architecture of the project being built "AMD64" and the processor architecture of the reference "MintySensorMonitor", "x86". This mismatch may cause runtime failures. Please consider changing the targeted processor architecture of your project through the Configuration Manager so as to align the processor architectures between your project and references, or take a dependency on references with a processor architecture that matches the targeted processor architecture of your project.
+E:\Development\Microsoft Visual Studio\2019\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2106,5): warning MSB3270: There was a mismatch between the processor architecture of the project being built "AMD64" and the processor architecture of the reference "MintyServiceHWiNFO", "x86". This mismatch may cause runtime failures. Please consider changing the targeted processor architecture of your project through the Configuration Manager so as to align the processor architectures between your project and references, or take a dependency on references with a processor architecture that matches the targeted processor architecture of your project.
+  AssemblyInfo.cpp
+  MintySm2MintySsJniWrapper.cpp
+  Generating Code...
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+     Creating library E:\Development\MintySm2MintySsJniWrapper\x64\Release\MintySm2MintySsJniWrapper.lib and object E:\Development\MintySm2MintySsJniWrapper\x64\Release\MintySm2MintySsJniWrapper.exp
+  MintySm2MintySsJniWrapper.vcxproj -> E:\Development\MintySm2MintySsJniWrapper\x64\Release\MintySm2MintySsJniWrapper.dll
