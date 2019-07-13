@@ -7,9 +7,8 @@ The communication between the three different languages is achieved by passing M
 * MSM : [Minty Sensor Monitor](https://github.com/MintyMods/MintySensorMonitor)
 * MSM2MSS : [Minty Sensor Monitor 2 Minty Sensor Server JNI Wrapper](https://github.com/MintyMods/MSM2MSS)
 
-
 ## GOAL : Integrate JAVA with C# via C++ and JNI to comunicate via JSON formatted strings
-Raw Sensor Information <--?--> **MsmServiceInterface** <--SHM--> **MSM**[C#] <--JSON--> **MSM2MSS**[C++] <--JSON--> **MSS**[JNI] <--JSON--> **API**[JAVA:REST/JSON/HTML]
+Raw Sensor Information <--*SHM::DLL*--> **MsmServiceInterface** <--*MSMRequest::MSMResponse*--> **MSM**[C#] <--*MSMRequest::MSMResponse*--> **MSM2MSS**[C++] <--*MSMRequest::MSMResponse*--> **MSS**[JNI] <--*MSMRequest::MSMResponse*--> **API**[JAVA:REST/JSON/HTML]
 
 ```
 public interface MsmServiceInterface {
