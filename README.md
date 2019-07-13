@@ -14,29 +14,17 @@ Integrate JAVA with C# via C++ and JNI to comunicate via JSON formatted strings
 Raw Sensor Information 
 
 <--?::?-->
-
 Sensor Information Providers
-
 <--*SHM::DLL*--> 
-
 **MsmServiceInterface** 
-
 <--*MSMRequest::MSMResponse*--> 
-
 **MSM**[C#] 
-
 <--*MSMRequest::MSMResponse*--> 
-
 **MSM2MSS**[C++] 
-
 <--*MSMRequest::MSMResponse*--> 
-
 **MSS**[JNI] 
-
 <--*MSMRequest::MSMResponse*--> 
-
 **API**[JAVA:REST/JSON]
-
 <--HTTP::HTML-->
 
 
