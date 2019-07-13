@@ -1,11 +1,11 @@
 # MSM2MSS - Minty Sensor Monitor <-2-> Minty Sensor Server [JNI Wrapper]
 [MSM2MSS](https://github.com/MintyMods/MintySm2MintySsJniWrapper) is a simple C++ wrapper to facilitate passing data via strings between JAVA and C# - This allows [Minty Sensor Server](https://github.com/MintyMods/MintySensorServer) (written in JAVA) to comunicate with [Minty Sensor Monitor](https://github.com/MintyMods/MintySensorMonitor) (written in C#) via the Java Native Interface (JNI).
-The communication between the three different languages is achieved by passing MSMRequest object formatted as JSON and consuming MSMResponse object formatted as JSON.
+The communication between the three different languages is achieved by passing [MSMRequest](https://github.com/MintyMods/MintySensorServer/blob/master/src/main/java/info/mintymods/msm/MsmMonitorRequest.java) object formatted as JSON and consuming [MSMResponse](https://github.com/MintyMods/MintySensorServer/blob/master/src/main/java/info/mintymods/msm/MsmMonitorResponse.java) object formatted as JSON.
 
 ## For more information see the following projects:-
 * MSS : [Minty Sensor Server](https://github.com/MintyMods/MintySensorServer)
 * MSM : [Minty Sensor Monitor](https://github.com/MintyMods/MintySensorMonitor)
-* MSM2MSS : [Minty Sensor Monitor 2 Minty Sensor Server JNI Wrapper](https://github.com/MintyMods/MSM2MSS)
+* MSM2MSS : [Minty Sensor Monitor 2 Minty Sensor Server JNI Wrapper](https://github.com/MintyMods/MintySm2MintySsJniWrapper)
 
 ## Project Goal
 Integrate JAVA with C# via C++ and JNI to comunicate via JSON formatted strings
@@ -25,7 +25,7 @@ Integrate JAVA with C# via C++ and JNI to comunicate via JSON formatted strings
 	- **API**[JAVA:REST/JSON]
 	- <--HTTP::HTML-->
 
-## Interfaces
+## MsmServiceInterface
 
 ```
 public interface MsmServiceInterface {
