@@ -1,7 +1,7 @@
-# Minty Sensor Monitor 2 Minty Sensor Server JNI Wrapper
+# MSM2MSS - Minty Sensor Monitor 2 Minty Sensor Server JNI Wrapper
 
-[MintySm2MintySsJniWrapper](https://github.com/MintyMods/MintySm2MintySsJniWrapper) is a simple C++ wrapper to allow Strings to be passed between JAVA and C# - This allows Minty Sensor Server written in JAVA to comunicate with Minty Sensor Monitor written in C# to comunicate with each other via JNI.
-The communication is aceived by passing a request object formatted as JSON and returning a response object formatted as JSON.
+[MintySm2MintySsJniWrapper](https://github.com/MintyMods/MintySm2MintySsJniWrapper) is a simple C++ wrapper to allow Strings to be passed between JAVA and C# - This allows Minty Sensor Server written in JAVA to comunicate with Minty Sensor Monitor written in C# via JNI.
+The communication is achieved by passing a string request object formatted as JSON and returning a string response object formatted as JSON.
 
 # For more information see the following projects:-
 
@@ -19,4 +19,4 @@ SENSORS <-?-> HWiNFO <-SHM-> MSM[C#:JSON] <--> MSM2MSS[C++:JSON] <--> MSS[JNI:JS
   * HWiNFO - Martin Malik for his help with the sensor integration [HWiNFO](http://hwinfo.com)
 
 ## License
-Minty Sensor Monitor is licensed under The MIT License (MIT). Which means that you can use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software. But you always need to state that MintyMods is the original author of this template.
+MSM2MSS is licensed under The [GNU General Public License version 3](https://www.gnu.org/licenses/gpl-3.0.en.html).
