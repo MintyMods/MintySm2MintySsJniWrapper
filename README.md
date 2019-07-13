@@ -5,11 +5,11 @@ The communication between the three languages is achieved by passing a MSMReques
 
 
 
-# For more information see the following projects:-
+## For more information see the following projects:-
 
 	* Minty Sensor Server : [MSS](https://github.com/MintyMods/MintySensorServer)
 	* Minty Sensor Monitor : [MSM](https://github.com/MintyMods/MintySensorMonitor)
-	* MintySm2MintySSJniWrapper : [MSM2MSS](https://github.com/MintyMods/MintySm2MintySsJniWrapper)
+	* Minty Sensor Monitor 2 Minty Sensor Server JNI Wrapper : [MSM2MSS](https://github.com/MintyMods/MSM2MSS)
 
 ## GOAL : Integrate JAVA with C# via C++ and JNI to comunicate via JSON formatted strings
 
@@ -19,5 +19,5 @@ SENSORS <-?-> HWiNFO <-SHM-> MSM[C#] <-JSON-> MSM2MSS[C++] <-JSON-> MSS[JNI] <-J
 
   * HWiNFO - Martin Malik for his help with the sensor integration [HWiNFO](http://hwinfo.com)
 
-## License
+### License
 MSM2MSS is licensed under The [GNU General Public License version 3](https://www.gnu.org/licenses/gpl-3.0.en.html)
