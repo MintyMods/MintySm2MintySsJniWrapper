@@ -13,5 +13,5 @@ SENSORS <-?-> HWiNFO <-SHM-> MSM[C#] <-JSON-> MSM2MSS[C++] <-JSON-> MSS[JNI] <-J
 ## Acknowledgments
   * HWiNFO - Martin Malik for his help with the sensor integration [HWiNFO](http://hwinfo.com)
 
-### License
-	MSM2MSS is licensed under The [GNU General Public License version 3](https://www.gnu.org/licenses/gpl-3.0.en.html)
+## License
+MSM2MSS is licensed under The [GNU General Public License version 3](https://www.gnu.org/licenses/gpl-3.0.en.html)
