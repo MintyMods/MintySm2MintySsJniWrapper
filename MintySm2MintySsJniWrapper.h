@@ -2,7 +2,7 @@
 using namespace System;
 
 namespace mintymods {
-	public ref class MintySensorMonitorJniWrapper {
+	public ref class MintySm2MintySsJniWrapper { 
 
 	};
 }

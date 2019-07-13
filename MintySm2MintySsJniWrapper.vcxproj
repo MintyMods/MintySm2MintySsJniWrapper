@@ -20,10 +20,11 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{6BC74412-4308-463D-BC12-676A460DFE6E}</ProjectGuid>
+    <ProjectGuid>{41A3D763-09E6-4E1A-AFC4-6C2654574A50}</ProjectGuid>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <Keyword>ManagedCProj</Keyword>
-    <RootNamespace>ClassLibrary1</RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <ProjectName>MintySm2MintySsJniWrapper</ProjectName>
   </PropertyGroup>
@@ -78,9 +79,13 @@
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>E:\Development\java\JDK1.8\include;E:\Development\java\JDK1.8\include\win32;$(IncludePath)</IncludePath>
     <LibraryPath>E:\Development\java\JDK1.8\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>.\bin</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\Development\java\JDK1.8\include\win32;E:\Development\java\JDK1.8\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\Development\java\JDK1.8\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>..\MintySensorServerGradle\src\main\resources\lib</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -162,12 +167,6 @@
       <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </PrecompiledHeaderOutputFile>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="app.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="app.ico" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="log4net">

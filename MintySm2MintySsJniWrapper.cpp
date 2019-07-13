@@ -1,9 +1,7 @@
-#include "pch.h"
-
 #include "MintySm2MintySsJniWrapper.h"
 #include "info_mintymods_jni_MsmJniWrapper.h"
-
 #include <string>
+#include <iostream>
 #include <vcclr.h>
 
 using System::Text::Encoding;
@@ -34,7 +32,6 @@ jstring stringToJString(JNIEnv* env, System::String^ value) {
 JNIEXPORT jstring JNICALL Java_info_mintymods_jni_MsmJniWrapper_processRequest
 (JNIEnv *env, jobject c, jstring json) {
 	const char* request;
-	jstring response;
 	try {
 		jboolean isJsonCopied;
 		request = env->GetStringUTFChars(json, &isJsonCopied);
@@ -42,5 +39,5 @@ JNIEXPORT jstring JNICALL Java_info_mintymods_jni_MsmJniWrapper_processRequest
 	} finally {
 		env->ReleaseStringUTFChars(json, request);
 	}
-	return response;
+	
 }
