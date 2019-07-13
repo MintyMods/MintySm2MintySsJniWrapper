@@ -10,22 +10,21 @@ The communication between the three different languages is achieved by passing M
 ## Project Goal
 Integrate JAVA with C# via C++ and JNI to comunicate via JSON formatted strings
 
-## Full Project Stack
-Raw Sensor Information 
-
- - <--?::?-->
- - Sensor Information Providers
- - <--*SHM::DLL*--> 
- - **MsmServiceInterface** 
- - <--*MSMRequest::MSMResponse*--> 
- - **MSM**[C#] 
- - <--*MSMRequest::MSMResponse*--> 
- - **MSM2MSS**[C++] 
- - <--*MSMRequest::MSMResponse*--> 
- - **MSS**[JNI] 
- - <--*MSMRequest::MSMResponse*--> 
- - **API**[JAVA:REST/JSON]
- - <--HTTP::HTML-->
+ - Full Project Stack
+	- Raw Sensor Information 
+	- <--?::?-->
+	- Sensor Information Providers
+	- <--*SHM::DLL*--> 
+	- **MsmServiceInterface** 
+	- <--*MSMRequest::MSMResponse*--> 
+	- **MSM**[C#] 
+	- <--*MSMRequest::MSMResponse*--> 
+	- **MSM2MSS**[C++] 
+	- <--*MSMRequest::MSMResponse*--> 
+	- **MSS**[JNI] 
+	- <--*MSMRequest::MSMResponse*--> 
+	- **API**[JAVA:REST/JSON]
+	- <--HTTP::HTML-->
 
 ## Interfaces
 
