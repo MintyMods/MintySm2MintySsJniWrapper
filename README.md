@@ -9,7 +9,7 @@ The communication between the three different languages is achieved by passing M
 
 
 ## GOAL : Integrate JAVA with C# via C++ and JNI to comunicate via JSON formatted strings
-Raw Sensor Information <--?--> HWiNFO <--SHM--> MSM[C#] <--JSON--> MSM2MSS[C++] <--JSON--> MSS[JNI] <--JSON--> API[JAVA:REST/JSON/HTML]
+Raw Sensor Information <--?--> [b]HWiNFO[/b] <--SHM--> [b]MSM[/b][C#] <--JSON--> [b]MSM2MSS[/b][C++] <--JSON--> [b]MSS[/b][JNI] <--JSON--> [b]API[/b][JAVA:REST/JSON/HTML]
 
 ## Acknowledgments
   * HWiNFO - Martin Malik for his help with the sensor integration [HWiNFO](http://hwinfo.com)
