@@ -3,9 +3,10 @@
 The communication between the three different languages is achieved by passing MSMRequest object formatted as JSON and consuming MSMResponse object formatted as JSON.
 
 ## For more information see the following projects:-
-* MSS : [Minty Sensor Server](https://github.com/MintyMods/MintySensorServer)
-* MSM : [Minty Sensor Monitor](https://github.com/MintyMods/MintySensorMonitor)
-* MSM2MSS : [Minty Sensor Monitor 2 Minty Sensor Server JNI Wrapper](https://github.com/MintyMods/MSM2MSS)
+MSS : [Minty Sensor Server](https://github.com/MintyMods/MintySensorServer)
+MSM : [Minty Sensor Monitor](https://github.com/MintyMods/MintySensorMonitor)
+MSM2MSS : [Minty Sensor Monitor 2 Minty Sensor Server JNI Wrapper](https://github.com/MintyMods/MSM2MSS)
+
 
 ## GOAL : Integrate JAVA with C# via C++ and JNI to comunicate via JSON formatted strings
 SENSORS <-?-> HWiNFO <-SHM-> MSM[C#] <-JSON-> MSM2MSS[C++] <-JSON-> MSS[JNI] <-JSON-> API[JAVA:REST/JSON/HTML]
